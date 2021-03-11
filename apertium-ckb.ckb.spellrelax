@@ -1,0 +1,7 @@
+[
+	! Unify apostrophe styles
+	[ ?* [ ' (->) [ %` | ʻ | ’ | ‘ | ʼ ] ] ?* ] .o.
+
+	! Accept input without diacritics
+	[ ?* [ á (->) a ] ?* ]
+]
