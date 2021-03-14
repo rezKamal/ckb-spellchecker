@@ -4,6 +4,10 @@
 # <n>      # Noun
 # <v>      # Verb
 # <adj>    # Adjective
+# <prn>    # Pronoun
+# <adv>    # Adverb
+# <pr>     # Preposition
+# <conjcoo> # Coordinating Conjunction
 
 # <sent>   # Sentence-ending punctuation
 # <guio>   # Hyphen
@@ -15,9 +19,32 @@
 # <lpar>   # Left parenthesis
 # <rpar>   # Right parenthesis
 
-# Number morphology
-# <pl>  # Plural
-# <sg>  # Singular
+# Noun subcategories
+# <pl>     # Plural
+# <sg>     # Singular
+# <ind>    # Indefinite
+# <def>    # Definite
+
+# Verb subcategories
+# <iv>     # Intransitive
+# <tv>     # Transitive
+# <past>   # Past
+# <npast>  # Non-past
+# <imp>    # Imperative
+# <neg>    # Negative
+
+# Person tags
+# <p1>     # First person
+# <p2>     # Second person
+# <p3>     # Third person
+
+# Cases
+# <subj>   # Subject
+# <obj>    # Object
+
+# Adjective tags
+# <comp>   # Comparative
+# <sup>    # Superlative
 
 # Other symbols
 # >      # Morpheme boundary
@@ -27,24 +54,87 @@
 ###############################################################################
 
 PATTERNS
-NounRoot RegNounInfl
-Punctuation
+Nouns
+Verbs
+Adjectives
+Conjuctions
 
+PATTERN Nouns
 
-LEXICON RegNounInfl
+N-Stems [ <n>: ] Definite/Plural?
 
-<n><sg>:
-<n><pl>:>s
+PATTERN Verbs
 
+V-Stems_1 [ <v>: ] Subject_Prn(1)?
+V-Stems_2 [ <v>: ] [ <imp><p2>:ب> ] Plural?
+
+PATTERN Adjectives
+
+Adjectives [ <adj>: ] Comparatives?
+
+PATTERN Conjunctions
+
+Conjunctions [ <conjcoo>: ]
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
 ###############################################################################
 
-LEXICON NounRoot
+LEXICON N-Stems
 
-house:house   # A noun
+پیاو:پیاو       # man
+سەگ:سەگ         # dog
+رۆژ:رۆژ         # day
+نامە:نامە       # letter
+دەرگا:دەرگا     # door
 
+LEXICON Definite/Plural
+
+<def><sg>:>{B}  # ەکە / کە
+<ind><sg>:>{C}  # ێک / یەک
+<pl>:>{A}        # ان / ن
+<def><pl>:>{D}  # ەکان / کان
+
+LEXICON V-Stems_1    # Past, Intransitive Stems
+
+هات<iv><past>:هات # came
+چوو<iv><past>:چوو # went
+
+LEXICON V-Stems_2    # Imperative Stems
+
+خۆ:خۆ
+چۆ:چۆ
+هێنە:هێنە
+
+LEXICON Plural
+
+<pl>:ن
+
+LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
+
++<prn><pers><p1><sg><subj>:>م
++<prn><pers><p1><pl><subj>:>ین
++<prn><pers><p2><sg><subj>:>یت
++<prn><pers><p2><pl><subj>:>ن
++<prn><pers><p3><sg><subj>:
++<prn><pers><p3><pl><subj>:>ن
+
+LEXICON Adjectives
+
+گەورە:گەورە   # large
+گەرم:گەرم     # warm
+چاک:چاک       # good
+
+LEXICON Comparatives
+
+<comp>:>تر
+<sup>:>ترین
+
+LEXICON Conjunctions
+
+<conjcoo>:و
+یان:یان
+بەڵام:بەڵام
 
 LEXICON Punctuation
 
@@ -57,7 +147,7 @@ LEXICON Punctuation
 -<guio>:-
 —<guio>:—
 ,<cm>:,
-?<sent>:? 
+?<sent>:?
 '<apos>:'
 "<quot>:"
 «<lquot>:«
@@ -71,7 +161,6 @@ LEXICON Punctuation
 \\<sent>:\\
 \/<sent>:\/
 
-
 # Resources:
 # https://github.com/apertium/lexd/blob/master/Usage.md
 # https://wiki.apertium.org/wiki/List_of_symbols
@@ -81,4 +170,3 @@ LEXICON Punctuation
 # https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
 # https://github.com/hfst/
 # http://wiki.apertium.org/wiki/Hfst
-
