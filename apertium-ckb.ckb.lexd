@@ -57,24 +57,30 @@ PATTERNS
 Nouns
 Verbs
 Adjectives
-Conjuctions
+Prepositions
+Conjunctions
 
 PATTERN Nouns
-
 N-Stems [ <n>: ] Definite/Plural?
 
 PATTERN Verbs
-
-V-Stems_1 [ <v>: ] Subject_Prn(1)?
+Verbs_Inf [ <v>: ]
+V-Stems_1 [ <v>: ] Subject_Prn(1)
 V-Stems_2 [ <v>: ] [ <imp><p2>:ب> ] Plural?
+V-Stems_2 [ <v>: ] [ <npast>:دە> ] Subject_Prn(1)
+V-Stems_1 [ <v>: ] [ ]
 
 PATTERN Adjectives
-
 Adjectives [ <adj>: ] Comparatives?
 
-PATTERN Conjunctions
+PATTERN Prepositions
+Prepositions [ <pr>: ]
 
+PATTERN Conjunctions
 Conjunctions [ <conjcoo>: ]
+
+PATTERN Adverbs
+Adverbs [ <adv>: ]
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
@@ -87,6 +93,7 @@ LEXICON N-Stems
 رۆژ:رۆژ         # day
 نامە:نامە       # letter
 دەرگا:دەرگا     # door
+لاپەڕە:لاپەڕە     # page
 
 LEXICON Definite/Plural
 
@@ -97,18 +104,25 @@ LEXICON Definite/Plural
 
 LEXICON V-Stems_1    # Past, Intransitive Stems
 
-هات<iv><past>:هات # came
-چوو<iv><past>:چوو # went
+هات<v><iv><past>:هات # came
+چوو<v><iv><past>:چوو # went
 
 LEXICON V-Stems_2    # Imperative Stems
 
-خۆ:خۆ
-چۆ:چۆ
-هێنە:هێنە
+خواردن<v><tv>:خۆ
+جوون<v><iv>:چ
+هێنان<v><tv>:هێن
+
+LEXICON Verbs_Inf
+
+چوون<v><iv><inf>:چوون
+خواردن<v><tv><inf>:خواردن
+هاتن<v><iv><inf>:هاتن
+هێنان<v><tv><inf>:هێنان
 
 LEXICON Plural
 
-<pl>:ن
+<pl>:>ن
 
 LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
 
@@ -116,50 +130,35 @@ LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
 +<prn><pers><p1><pl><subj>:>ین
 +<prn><pers><p2><sg><subj>:>یت
 +<prn><pers><p2><pl><subj>:>ن
-+<prn><pers><p3><sg><subj>:
++<prn><pers><p3><sg><subj>:>i
 +<prn><pers><p3><pl><subj>:>ن
 
 LEXICON Adjectives
 
-گەورە:گەورە   # large
-گەرم:گەرم     # warm
-چاک:چاک       # good
+گەورە<adj>:گەورە   # large
+گەرم<adj>:گەرم     # warm
+چاک<adj>:چاک       # good
 
 LEXICON Comparatives
 
-<comp>:>تر
-<sup>:>ترین
+تر<adj><comp>:>تر
+ترین<adj><sup>:>ترین
+
+LEXICON Prepositions
+
+بە<pr>:بە
+بۆ<pr>:بۆ
+لە<pr>:لە
 
 LEXICON Conjunctions
 
-<conjcoo>:و
-یان:یان
-بەڵام:بەڵام
+و<conjcoo>:و
+یان<conjcoo>:یان
+بەڵام<conjcoo>:بەڵام
 
-LEXICON Punctuation
+LEXICON Adverbs
 
-.<sent>:.
-..<sent>:..
-...<sent>:...
-;<sent>:;
-\:<sent>:\:
-!<sent>:!
--<guio>:-
-—<guio>:—
-,<cm>:,
-?<sent>:?
-'<apos>:'
-"<quot>:"
-«<lquot>:«
-»<rquot>:»
-”<rquot>:”
-“<lquot>:“
-(<lpar>:(
-\]<rpar>:\]
-\[<lpar>:\[
-)<rpar>:)
-\\<sent>:\\
-\/<sent>:\/
+سبەینێ<adv>:سبەینێ
 
 # Resources:
 # https://github.com/apertium/lexd/blob/master/Usage.md
