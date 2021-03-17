@@ -56,6 +56,7 @@
 PATTERNS
 Nouns
 Verbs
+Pronouns
 Adjectives
 Prepositions
 Conjunctions
@@ -64,11 +65,16 @@ PATTERN Nouns
 N-Stems [ <n>: ] Definite/Plural?
 
 PATTERN Verbs
-Verbs_Inf [ <v>: ]
-V-Stems_1 [ <v>: ] Subject_Prn(1)
-V-Stems_2 [ <v>: ] [ <imp><p2>:ب> ] Plural?
-V-Stems_2 [ <v>: ] [ <npast>:دە> ] Subject_Prn(1)
-V-Stems_1 [ <v>: ] [ ]
+Verbs_Inf
+V-Stems_1 Subject_Prn(1)
+[ :نە> ] V-Stems_1 [ <neg>: ] Subject_Prn(1)
+[ :ب> ] V-Stems_2 [ <imp><p2>: ] Plural?     # here
+[ :دە> ] V-Stems_2 [ <npast>: ] Subject_Prn(1)
+[ :نا> ] V-Stems_2 [ <npast><neg>: ] Subject_Prn(1)
+V-Stems_1 [ <v>: ]
+
+PATTERN Pronouns
+Pronouns [ <prn>: ]
 
 PATTERN Adjectives
 Adjectives [ <adj>: ] Comparatives?
@@ -104,14 +110,14 @@ LEXICON Definite/Plural
 
 LEXICON V-Stems_1    # Past, Intransitive Stems
 
-هات<v><iv><past>:هات # came
-چوو<v><iv><past>:چوو # went
+هاتن<v><iv><past>:هات # came
+چوون<v><iv><past>:چوو # went
 
 LEXICON V-Stems_2    # Imperative Stems
 
 خواردن<v><tv>:خۆ
-جوون<v><iv>:چ
-هێنان<v><tv>:هێن
+چوون<iv>:چ
+هێنان<tv>:هێن
 
 LEXICON Verbs_Inf
 
@@ -126,12 +132,12 @@ LEXICON Plural
 
 LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
 
-+<prn><pers><p1><sg><subj>:>م
-+<prn><pers><p1><pl><subj>:>ین
-+<prn><pers><p2><sg><subj>:>یت
-+<prn><pers><p2><pl><subj>:>ن
-+<prn><pers><p3><sg><subj>:>i
-+<prn><pers><p3><pl><subj>:>ن
+<p1><sg>:>م
+<p1><pl>:>ین
+<p2><sg>:>یت
+<p2><pl>:>ن
+<p3><sg>:>
+<p3><pl>:>ن
 
 LEXICON Adjectives
 
@@ -141,8 +147,8 @@ LEXICON Adjectives
 
 LEXICON Comparatives
 
-تر<adj><comp>:>تر
-ترین<adj><sup>:>ترین
+<comp>:>تر
+<sup>:>ترین
 
 LEXICON Prepositions
 
@@ -159,6 +165,15 @@ LEXICON Conjunctions
 LEXICON Adverbs
 
 سبەینێ<adv>:سبەینێ
+
+LEXICON Pronouns
+
+من<prn><pers><p1><sg>:من
+تۆ<prn><pers><p2><sg>:تۆ
+ئەو<prn><pers><p3><sg>:ئەو
+ئێمە<prn><pers><p1><pl>:ئێمە
+ئێوە<prn><pers><p2><pl>:ئێوە
+ئەوان<prn><pers><p3><pl>:ئەوان
 
 # Resources:
 # https://github.com/apertium/lexd/blob/master/Usage.md
