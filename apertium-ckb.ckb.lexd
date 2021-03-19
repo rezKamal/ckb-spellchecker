@@ -68,25 +68,27 @@ PATTERN Verbs
 Verbs_Inf
 V-Stems_1 Subject_Prn(1)
 [ :نە> ] V-Stems_1 [ <neg>: ] Subject_Prn(1)
-[ :ب> ] V-Stems_2 [ <imp><p2>: ] Plural?     # here
-[ :دە> ] V-Stems_2 [ <npast>: ] Subject_Prn(1)
-[ :نا> ] V-Stems_2 [ <npast><neg>: ] Subject_Prn(1)
+[ :دە> ] V-Stems_2 [ <npast>: ] Subject_Prn(2)
+[ :نا> ] V-Stems_2 [ <npast><neg>: ] Subject_Prn(2)
+N-Stems [<n>+:] Subject_Prn(3)
+
 V-Stems_1 [ <v>: ]
+:Imperatives(1) V-Stems_2 Imperatives(2)
 
 PATTERN Pronouns
-Pronouns [ <prn>: ]
+Prns
 
 PATTERN Adjectives
-Adjectives [ <adj>: ] Comparatives?
+Adj-Stem [ <adj>: ] Comparatives?
 
 PATTERN Prepositions
-Prepositions [ <pr>: ]
+Prep [ <pr>: ]
 
 PATTERN Conjunctions
-Conjunctions [ <conjcoo>: ]
+Conj [ <conjcoo>: ]
 
 PATTERN Adverbs
-Adverbs [ <adv>: ]
+Adv [ <adv>: ]
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
@@ -97,27 +99,43 @@ LEXICON N-Stems
 پیاو:پیاو       # man
 سەگ:سەگ         # dog
 رۆژ:رۆژ         # day
-نامە:نامە       # letter
-دەرگا:دەرگا     # door
-لاپەڕە:لاپەڕە     # page
+نامە:نام{A}       # letter
+دەرگا:دەرگ{a}     # door
+لاپەڕە:لاپەڕ{A}     # page
+نان:نان         # bread
 
 LEXICON Definite/Plural
 
-<def><sg>:>{B}  # ەکە / کە
+<def><sg>:>ەکە
 <ind><sg>:>{C}  # ێک / یەک
-<pl>:>{A}        # ان / ن
-<def><pl>:>{D}  # ەکان / کان
+<pl>:>ان
+<def><pl>:>ەکان
 
 LEXICON V-Stems_1    # Past, Intransitive Stems
 
-هاتن<v><iv><past>:هات # came
-چوون<v><iv><past>:چوو # went
+هاتن<v><iv><past>:هات       # came
+چوون<v><iv><past>:چوو       # went
+خواردن<v><tv><past>:خوارد   # ate
+هێنان<v><tv><past>:هێنان
 
 LEXICON V-Stems_2    # Imperative Stems
 
-خواردن<v><tv>:خۆ
-چوون<iv>:چ
-هێنان<tv>:هێن
+خواردن<v><tv>:خ{W}
+چوون<v><iv>:چ{O}
+هێنان<v><tv>:هێن
+هاتن<v><iv>:د
+
+LEXICON NPast(2)
+
+:دە>  <npast>:
+:نا>  <npast><neg>:
+
+LEXICON Imperatives(2)
+
+:ب>   <imp><p2><sg>:
+:ب>   <imp><p2><pl>:ن
+:مە>   <imp><neg><p2><sg>:
+:مە>   <imp><neg><p2><pl>:ن
 
 LEXICON Verbs_Inf
 
@@ -130,43 +148,44 @@ LEXICON Plural
 
 <pl>:>ن
 
-LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
+LEXICON Subject_Prn(3)  # Subject Pronouns
 
-<p1><sg>:>م
-<p1><pl>:>ین
-<p2><sg>:>یت
-<p2><pl>:>ن
-<p3><sg>:>
-<p3><pl>:>ن
+<p1><sg>:>م   <p1><sg>:>م   من<p1><sg>:م
+<p1><pl>:>ین  <p1><pl>:>ین  ئێمە<prn><pers><p1><pl>:>مان
+<p2><sg>:>یت  <p2><sg>:>یت  تۆ<prn><pers><p2><sg>:>ت
+<p2><pl>:>ن   <p2><pl>:>ن   ئێوە<prn><pers><p2><pl>:>تان
+<p3><sg>:>    <p3><sg>:>ێت  ئەو<prn><pers><p3><sg>:>ی
+<p3><pl>:>ن   <p3><pl>:>ن   ئەوان<prn><pers><p3><pl>:>یان
 
-LEXICON Adjectives
+LEXICON Adj-Stem
 
-گەورە<adj>:گەورە   # large
-گەرم<adj>:گەرم     # warm
-چاک<adj>:چاک       # good
+گەورە:گەورە   # large
+گەرم:گەرم     # warm
+چاک:چاک       # good
 
 LEXICON Comparatives
 
 <comp>:>تر
 <sup>:>ترین
 
-LEXICON Prepositions
+LEXICON Prep
 
-بە<pr>:بە
-بۆ<pr>:بۆ
-لە<pr>:لە
+بە:بە
+بۆ:بۆ
+لە:لە
 
-LEXICON Conjunctions
+LEXICON Conj
 
-و<conjcoo>:و
-یان<conjcoo>:یان
-بەڵام<conjcoo>:بەڵام
+و:و
+یان:یان
+بەڵام:بەڵام
 
-LEXICON Adverbs
+LEXICON Adv
 
-سبەینێ<adv>:سبەینێ
+سبەینێ:سبەینێ
+هەندێکجار:هەندێکجار
 
-LEXICON Pronouns
+LEXICON Prns
 
 من<prn><pers><p1><sg>:من
 تۆ<prn><pers><p2><sg>:تۆ
