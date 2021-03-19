@@ -68,10 +68,8 @@ PATTERN Verbs
 Verbs_Inf
 V-Stems_1 Subject_Prn(1)
 [ :نە> ] V-Stems_1 [ <neg>: ] Subject_Prn(1)
-[ :دە> ] V-Stems_2 [ <npast>: ] Subject_Prn(2)
-[ :نا> ] V-Stems_2 [ <npast><neg>: ] Subject_Prn(2)
+NPast(1) V-Stems_2 NPast(2) Subject_Prn(2)
 N-Stems [<n>+:] Subject_Prn(3)
-
 V-Stems_1 [ <v>: ]
 :Imperatives(1) V-Stems_2 Imperatives(2)
 
@@ -126,7 +124,7 @@ LEXICON V-Stems_2    # Imperative Stems
 خواردن<v><tv>:خ{W}
 چوون<v><iv>:چ{O}
 هێنان<v><tv>:هێن
-هاتن<v><iv>:د
+هاتن<v><iv>:یە
 
 LEXICON NPast(2)
 
@@ -181,11 +179,13 @@ LEXICON Conj
 یان:یان
 بەڵام:بەڵام
 جا:جا
+لەبەر:لەبەر
 
 LEXICON Adv
 
 سبەینێ:سبەینێ
 هەندێکجار:هەندێکجار
+هەر:هەر
 
 LEXICON Prns
 
