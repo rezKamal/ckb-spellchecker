@@ -103,6 +103,9 @@ LEXICON N-Stems
 دەرگا:دەرگ{a}     # door
 لاپەڕە:لاپەڕ{A}     # page
 نان:نان         # bread
+ئاو:ئاو           # water
+خودا:خودا       # god
+زەوی:زەوی       # earth
 
 LEXICON Definite/Plural
 
@@ -144,13 +147,9 @@ LEXICON Verbs_Inf
 هاتن<v><iv><inf>:هاتن
 هێنان<v><tv><inf>:هێنان
 
-LEXICON Plural
-
-<pl>:>ن
-
 LEXICON Subject_Prn(3)  # Subject Pronouns
 
-<p1><sg>:>م   <p1><sg>:>م   من<p1><sg>:م
+<p1><sg>:>م   <p1><sg>:>م     من<p1><sg>:>م
 <p1><pl>:>ین  <p1><pl>:>ین  ئێمە<prn><pers><p1><pl>:>مان
 <p2><sg>:>یت  <p2><sg>:>یت  تۆ<prn><pers><p2><sg>:>ت
 <p2><pl>:>ن   <p2><pl>:>ن   ئێوە<prn><pers><p2><pl>:>تان
@@ -173,12 +172,15 @@ LEXICON Prep
 بە:بە
 بۆ:بۆ
 لە:لە
+کە:کە
+لەسەر:لەسەر
 
 LEXICON Conj
 
 و:و
 یان:یان
 بەڵام:بەڵام
+جا:جا
 
 LEXICON Adv
 
