@@ -72,11 +72,11 @@ Tests:
   Imperative Verbs:
     خواردن<v><tv><imp><neg<p3><sg>:
     - مەیخۆ
-    هاتن<v><iv><imp><neg><p3>:
+    هاتن<v><iv><imp><neg><p3><sg>:
     - مەیە
-    هێنان<v><tv><imp><neg><sg><p3>:
+    هێنان<v><tv><imp><neg><p3><sg>:
     - مەیهێنە
-    چوون<v><iv><imp><neg><sg><p3>:
+    چوون<v><iv><imp><neg><p3><sg>:
     - مەچۆ
   Indefinite:
     سه‌گ<n><ind><sg>:
@@ -108,6 +108,8 @@ Tests:
     - نامە
     پیاو<n>:
     - پیاو
+    ئاو<n>:
+    - ئاو
   Parts of Speech: {}
   Past Verbs:
     خواردن<v><tv><past><neg><p3><sg>:
@@ -176,7 +178,7 @@ Tests:
     - گەرمترین
     گەورە<adj><sup>:
     - گەورەترین
-  To Bring:
+  Food:
     نان<n>+ئێمە<prn><pers><p1><pl>:
     - نانمان
     نان<n>+ئێوە<prn><pers><p2><pl>:
@@ -189,6 +191,19 @@ Tests:
     - نانت
     نان<n>+من<prn><pers><p1><sg>:
     - نانم
+  Water:
+    ئاو<n>+ئێمە<prn><pers><p1><pl>:
+    - ئاومان
+    ئاو<n>+ئێوە<prn><pers><p2><pl>:
+    - ئاوتان
+    ئاو<n>+ئەو<prn><pers><p3><sg>:
+    - ئاوی
+    ئاو<n>+ئەوان<prn><pers><p3><pl>:
+    - ئاویان
+    ئاو<n>+تۆ<prn><pers><p2><sg>:
+    - ئاوت
+    ئاو<n>+من<prn><pers><p1><sg>:
+    - ئاوم
   To Come:
     هاتن<v><iv><past><p1><pl>:
     - هاتین
