@@ -15,7 +15,7 @@ Tests:
     سبەینێ<adv>:
     - سبەینێ
     هەندێک جار<adv>:
-    - هەندێک جار
+    - هەندێکجار
   Attribution:
     سەر<n>+ی<pr>+مارێک<n><ind><sg>:
     - سەری مارێک
@@ -70,9 +70,9 @@ Tests:
     - ئەو سەگە
   Imperative: {}
   Imperative Verbs:
-    خواردن<v><tv><imp><neg><sg><p3>:
+    خواردن<v><tv><imp><neg<p3><sg>:
     - مەیخۆ
-    هاتن<v><iv><imp><neg><sg><p3>:
+    هاتن<v><iv><imp><neg><p3>:
     - مەیە
     هێنان<v><tv><imp><neg><sg><p3>:
     - مەیهێنە
@@ -110,13 +110,13 @@ Tests:
     - پیاو
   Parts of Speech: {}
   Past Verbs:
-    خواردن<v><tv><past><neg><sg><p3>:
-    - نەکرد
-    هاتن<v><iv><past><neg><sg><p3>:
+    خواردن<v><tv><past><neg><p3><sg>:
+    - نەخوارد
+    هاتن<v><iv><past><neg><p3><sg>:
     - نەهات
-    هێنان<v><tv><past><neg><sg><p3>:
+    هێنان<v><tv><past><neg><p3><sg>:
     - نەهێنا
-    چوون<v><iv><past><neg><sg><p3>:
+    چوون<v><iv><past><neg><p3><sg>:
     - نەچوو
   Plural Imperative:
     خواردن<v><tv><imp><p2><pl>:
@@ -137,13 +137,13 @@ Tests:
     - لە
   Present & Future: {}
   Present Verbs:
-    خواردن<v><tv><npast><neg><sg><p3>:
+    خواردن<v><tv><npast><neg><p3><sg>:
     - ناخوات
-    هاتن<v><iv><npast><neg><sg><p3>:
+    هاتن<v><iv><npast><neg><p3><sg>:
     - نایەت
-    هێنان<v><tv><npast><neg><sg><p3>:
+    هێنان<v><tv><npast><neg><p3><sg>:
     - ناهێنێت
-    چوون<v><iv><npast><neg><sg><p3>:
+    چوون<v><iv><npast><neg><p3><sg>:
     - ناچێت
   Pronouns:
     ئێمە<prn><pers><p1><pl>:
@@ -177,18 +177,18 @@ Tests:
     گەورە<adj><sup>:
     - گەورەترین
   To Bring:
-    نان<n><obj>+ئێمە<prn><pers><p1><pl><subj>+هێنان<v><tv><past>:
-    - نانمان هێنا
-    نان<n><obj>+ئێوە<prn><pers><p2><pl><subj>+هێنان<v><tv><past>:
-    - نانتان هێنا
-    نان<n><obj>+ئەو<prn><pers><p3><sg><subj>+هێنان<v><tv><past>:
-    - نانی هێنا
-    نان<n><obj>+ئەوان<prn><pers><p3><pl><subj>+هێنان<v><tv><past>:
-    - نانیان هێنا
-    نان<n><obj>+تۆ<prn><pers><p2><sg><subj>+هێنان<v><tv><past>:
-    - نانت هێنا
-    نان<n><obj>+من<prn><pers><p1><sg><subj>+هێنان<v><tv><past>:
-    - نانم هێنا
+    نان<n>+ئێمە<prn><pers><p1><pl>:
+    - نانمان
+    نان<n>+ئێوە<prn><pers><p2><pl>:
+    - نانتان
+    نان<n>+ئەو<prn><pers><p3><sg>:
+    - نانی
+    نان<n>+ئەوان<prn><pers><p3><pl>:
+    - نانیان
+    نان<n>+تۆ<prn><pers><p2><sg>:
+    - نانت
+    نان<n>+من<prn><pers><p1><sg>:
+    - نانم
   To Come:
     هاتن<v><iv><past><p1><pl>:
     - هاتین
@@ -202,19 +202,6 @@ Tests:
     - هاتن
     هاتن<v><iv><past><p3><sg>:
     - هات
-  To Eat (Food):
-    نان<n><obj>+ئێمە<prn><pers><p1><pl><subj>+خواردن<v><tv><past>:
-    - نانمان خوارد
-    نان<n><obj>+ئێوە<prn><pers><p2><pl><subj>+خواردن<v><tv><past>:
-    - نانتان خوارد
-    نان<n><obj>+ئەو<prn><pers><p3><sg><subj>+خواردن<v><tv><past>:
-    - نانی خوارد
-    نان<n><obj>+ئەوان<prn><pers><p3><pl><subj>+خواردن<v><tv><past>:
-    - نانیان خوارد
-    نان<n><obj>+تۆ<prn><pers><p2><sg><subj>+خواردن<v><tv><past>:
-    - نانت خوارد
-    نان<n><obj>+من<prn><pers><p1><sg><subj>+خواردن<v><tv><past>:
-    - نانم خوارد
   To Go:
     چوون<v><iv><npast><p1><pl>:
     - دەچین
