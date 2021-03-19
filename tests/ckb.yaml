@@ -1,0 +1,226 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../ckb.autogen.hfst
+    Morph: ../ckb.automorf.hfst
+Tests:
+  Adjectives:
+    چاک<adj>:
+    - چاک
+    گەرم<adj>:
+    - گەرم
+    گەورە<adj>:
+    - گەورە
+  Adverbs:
+    سبەینێ<adv>:
+    - سبەینێ
+    هەندێک جار<adv>:
+    - هەندێکجار
+  Attribution:
+    سەر<n>+ی<pr>+مارێک<n><ind><sg>:
+    - سەری مارێک
+    سەگ<n>+ئەمانە<det><dem><dst><pl>:
+    - ئەو سەگە
+    قاچەکان<n><def><pl>+ی<pr>+من<prn><pers><p1><sg>:
+    - قاچەکانی من
+    پەڕ<n>+ی<pr>+باڵندەکان<n><def><pl>:
+    - پەڕی باڵندەکان
+  Comparative & Superlative: {}
+  Comparative Forms:
+    چاک<adj><comp>:
+    - چاکتر
+    گەرم<adj><comp>:
+    - گەرمتر
+    گەورە<adj><comp>:
+    - گەورەتر
+  Conjunctions:
+    بەڵام<conjcoo>:
+    - بەڵام
+    و<conjcoo>:
+    - و
+    یان<conjcoo>:
+    - یان
+  Definite:
+    سه‌گ<n><def><sg>:
+    - سه‌گه‌كه‌
+    لاپه‌ڕه‌<n><def><sg>:
+    - لاپەڕەکە
+    نامە<n><def><sg>:
+    - نامەکە
+    پیاو<n><def><sg>:
+    - پیاوه‌كه‌
+  Definite Plurals:
+    سه‌گ<n><def><pl>:
+    - سەگەکان
+    لاپەڕە<n><def><pl>:
+    - لاپەڕەکان
+    نامە<n><def><pl>:
+    - نامەکان
+    پیاو<n><def><pl>:
+    - پیاوەکان
+  Definiteness: {}
+  Demonstratives:
+    سەگ<n>+ئەمانە<det><dem><prx><pl>:
+    - ئەم سەگانە
+    سەگ<n>+ئەمە<det><dem><prx><sg>:
+    - ئەم سەگە
+    سەگ<n>+ئەوانە<det><dem><dst><pl>:
+    - ئەو سەگانە
+    سەگ<n>+ئەوە<det><dem><dst><sg>:
+    - ئەو سەگە
+  Imperative: {}
+  Imperative Verbs:
+    خواردن<v><tv><imp><neg<p3><sg>:
+    - مەیخۆ
+    هاتن<v><iv><imp><neg><p3>:
+    - مەیە
+    هێنان<v><tv><imp><neg><sg><p3>:
+    - مەیهێنە
+    چوون<v><iv><imp><neg><sg><p3>:
+    - مەچۆ
+  Indefinite:
+    سه‌گ<n><ind><sg>:
+    - سه‌گێک
+    لاپه‌ڕه‌<n><ind><sg>:
+    - لاپه‌ڕه‌یه‌ك
+    نامە<n><ind><sg>:
+    - نامەیەک
+    پیاو<n><ind><sg>:
+    - پیاوێک
+  Lemma Plurals:
+    سه‌گ<n><pl>:
+    - سەگان
+    لاپه‌ڕه‌<n><pl>:
+    - لاپەڕان
+    نامە<n><pl>:
+    - نامان
+    پیاو<n><pl>:
+    - پیاوان
+  Negatives: {}
+  Nouns:
+    دەرگا<n>:
+    - دەرگا
+    رۆژ<n>:
+    - رۆژ
+    سه‌گ<n>:
+    - سه‌گ
+    نامە<n>:
+    - نامە
+    پیاو<n>:
+    - پیاو
+  Parts of Speech: {}
+  Past Verbs:
+    خواردن<v><tv><past><neg><p3><sg>:
+    - نەخوارد
+    هاتن<v><iv><past><neg><p3><sg>:
+    - نەهات
+    هێنان<v><tv><past><neg><p3><sg>:
+    - نەهێنا
+    چوون<v><iv><past><neg><p3><sg>:
+    - نەچوو
+  Plural Imperative:
+    خواردن<v><tv><imp><p2><pl>:
+    - بخۆن
+    هاتن<v><iv><imp><p2><pl>:
+    - وەرن
+    هێنان<v><tv><imp><p2><pl>:
+    - بهێنن
+    چوون<v><iv><imp><p2><pl>:
+    - بچن
+  Plural Nouns: {}
+  Prepositions:
+    بۆ<pr>:
+    - بۆ
+    بە<pr>:
+    - بە
+    لە<pr>:
+    - لە
+  Present & Future: {}
+  Present Verbs:
+    خواردن<v><tv><npast><neg><p3><sg>:
+    - ناخوات
+    هاتن<v><iv><npast><neg><p3><sg>:
+    - نایەت
+    هێنان<v><tv><npast><neg><p3><sg>:
+    - ناهێنێت
+    چوون<v><iv><npast><neg><p3><sg>:
+    - ناچێت
+  Pronouns:
+    ئێمە<prn><pers><p1><pl>:
+    - ئێمە
+    ئێوە<prn><pers><p2><pl>:
+    - ئێوە
+    ئەو<prn><pers><p3><sg>:
+    - ئەو
+    ئەوان<prn><pers><p3><pl>:
+    - ئەوان
+    تۆ<prn><pers><p2><sg>:
+    - تۆ
+    من<prn><pers><p1><sg>:
+    - من
+  Simple Past (Intransitive): {}
+  Simple Past (Transitive): {}
+  Singular Imperative:
+    خواردن<v><tv><imp><p2><sg>:
+    - بخۆ
+    هاتن<v><iv><imp><p2><sg>:
+    - وەرە
+    هێنان<v><tv><imp><p2><sg>:
+    - بهێنە
+    چوون<v><iv><imp><p2><sg>:
+    - بچۆ
+  Superlative Forms:
+    چاک<adj><sup>:
+    - چاکترین
+    گەرم<adj><sup>:
+    - گەرمترین
+    گەورە<adj><sup>:
+    - گەورەترین
+  To Bring:
+    نان<n>+ئێمە<prn><pers><p1><pl>:
+    - نانمان
+    نان<n>+ئێوە<prn><pers><p2><pl>:
+    - نانتان
+    نان<n>+ئەو<prn><pers><p3><sg>:
+    - نانی
+    نان<n>+ئەوان<prn><pers><p3><pl>:
+    - نانیان
+    نان<n>+تۆ<prn><pers><p2><sg>:
+    - نانت
+    نان<n>+من<prn><pers><p1><sg>:
+    - نانم
+  To Come:
+    هاتن<v><iv><past><p1><pl>:
+    - هاتین
+    هاتن<v><iv><past><p1><sg>:
+    - هاتم
+    هاتن<v><iv><past><p2><pl>:
+    - هاتن
+    هاتن<v><iv><past><p2><sg>:
+    - هاتیت
+    هاتن<v><iv><past><p3><pl>:
+    - هاتن
+    هاتن<v><iv><past><p3><sg>:
+    - هات
+  To Go:
+    چوون<v><iv><npast><p1><pl>:
+    - دەچین
+    چوون<v><iv><npast><p1><sg>:
+    - دەچم
+    چوون<v><iv><npast><p2><pl>:
+    - دەچن
+    چوون<v><iv><npast><p2><sg>:
+    - دەچیت
+    چوون<v><iv><npast><p3><pl>:
+    - دەچن
+    چوون<v><iv><npast><p3><sg>:
+    - دەچێت
+  Verbs:
+    خواردن<v><tv><inf>:
+    - خواردن
+    هاتن<v><iv><inf>:
+    - هاتن
+    هێنان<v><tv><inf>:
+    - هێنان
+    چوون<v><iv><inf>:
+    - چوون
