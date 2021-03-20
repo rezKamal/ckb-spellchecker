@@ -124,7 +124,6 @@ LEXICON V-Stems_2    # Imperative Stems
 خواردن<v><tv>:خ{W}
 چوون<v><iv>:چ{O}
 هێنان<v><tv>:هێن
-هاتن<v><iv>:یە
 
 LEXICON NPast(2)
 
@@ -147,7 +146,7 @@ LEXICON Verbs_Inf
 
 LEXICON Subject_Prn(3)  # Subject Pronouns
 
-<p1><sg>:>م   <p1><sg>:>م     من<p1><sg>:>م
+<p1><sg>:>م   <p1><sg>:>م     من<prn><pers><p1><sg>:>م
 <p1><pl>:>ین  <p1><pl>:>ین  ئێمە<prn><pers><p1><pl>:>مان
 <p2><sg>:>یت  <p2><sg>:>یت  تۆ<prn><pers><p2><sg>:>ت
 <p2><pl>:>ن   <p2><pl>:>ن   ئێوە<prn><pers><p2><pl>:>تان
