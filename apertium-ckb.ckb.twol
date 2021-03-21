@@ -27,6 +27,10 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
           ێ %>:0 _ ;
           ۆ %>:0 _ ;
 
+"Add ی before ان pluralization for noun ending with ە or ا"
+%{Y%}:ی <=> :ە %>:0 _ ;
+            :ا %>:0 _ ;
+
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
 ! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
