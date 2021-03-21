@@ -43,14 +43,14 @@ Tests:
   Definite:
     سەگ<n><def><sg>:
     - سەگەکە
-    لاپه‌ڕه‌<n><def><sg>:
+    لاپەڕە<n><def><sg>:
     - لاپەڕەکە
     نامە<n><def><sg>:
     - نامەکە
     پیاو<n><def><sg>:
-    - پیاوه‌كه‌
+    - پیاوەکە
   Definite Plurals:
-    سه‌گ<n><def><pl>:
+    سەگ<n><def><pl>:
     - سەگەکان
     لاپەڕە<n><def><pl>:
     - لاپەڕەکان
@@ -70,13 +70,13 @@ Tests:
     - ئەو سەگە
   Imperative: {}
   Imperative Verbs:
-    خواردن<v><tv><imp><neg<p3><sg>:
+    خواردن<v><tv><imp><neg><p2><sg>:
     - مەخۆ
-    هاتن<v><iv><imp><neg><p3><sg>:
+    هاتن<v><iv><imp><neg><p2><sg>:
     - مەیە
-    هێنان<v><tv><imp><neg><p3><sg>:
+    هێنان<v><tv><imp><neg><p2><sg>:
     - مەهێنە
-    چوون<v><iv><imp><neg><p3><sg>:
+    چوون<v><iv><imp><neg><p2><sg>:
     - مەچۆ
   Indefinite:
     سەگ<n><ind><sg>:
@@ -91,9 +91,9 @@ Tests:
     سەگ<n><pl>:
     - سەگان
     لاپەڕە<n><pl>:
-    - لاپەڕان
+    - لاپەڕەیان
     نامە<n><pl>:
-    - نامان
+    - نامەیان
     پیاو<n><pl>:
     - پیاوان
   Negatives: {}
