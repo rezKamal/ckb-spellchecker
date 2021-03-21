@@ -1,13 +1,10 @@
 Alphabet
   ا ب ج د ە ف گ ه ح ژ ک ل م ن ۆ پ ق ر س ت ئ ڤ و خ ی ز چ غ ‌ع ڵ ڕ ش و وو
-  %{a%}:ا %{a%}:0
   %{A%}:ە %{A%}:0
   %{C%}:ێک %{C%}:یەک
-  %{D%}:ەکان %{D%}:کان
-  %{E%}:ە
-  %{F%}:ە %{F%}:ۆ %{F%}:ن
   %{O%}:0 %{O%}:ۆ
   %{W%}:و %{W%}:ۆ
+  %{Y%}:0 %{Y%}:ی
   %>:0;
 
 Sets
@@ -18,6 +15,17 @@ Rules
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
+"Remove ە from ەکە and ەکان after one of the two vowels ە and ا"
+%{A%}:0 <=> :ە %>:0 _ ;
+            :ا %>:0 _ ;
+
+"Change indefinite singular noun ending from ێک to یەک for noun ending with ایێۆ"
+%{C%}:یەک <=> ە %>:0 _ ;
+          ا %>:0 _ ;
+          ی %>:0 _ ;
+          ێ %>:0 _ ;
+          ۆ %>:0 _ ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
