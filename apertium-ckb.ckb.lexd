@@ -97,9 +97,9 @@ LEXICON N-Stems
 پیاو:پیاو       # man
 سەگ:سەگ         # dog
 رۆژ:رۆژ         # day
-نامە:نام{A}       # letter
-دەرگا:دەرگ{a}     # door
-لاپەڕە:لاپەڕ{A}     # page
+نامە:نامە       # letter
+دەرگا:دەرگا     # door
+لاپەڕە:لاپەڕە     # page
 نان:نان         # bread
 ئاو:ئاو           # water
 خودا:خودا       # god
@@ -107,17 +107,17 @@ LEXICON N-Stems
 
 LEXICON Definite/Plural
 
-<def><sg>:>ەکە
-<ind><sg>:>{C}  # ێک / یەک
-<pl>:>ان
-<def><pl>:>ەکان
+<def><sg>:>{A}کە
+<ind><sg>:>{C}
+<pl>:>{Y}ان
+<def><pl>:>{A}کان
 
 LEXICON V-Stems_1    # Past, Intransitive Stems
 
 هاتن<v><iv><past>:هات       # came
 چوون<v><iv><past>:چوو       # went
 خواردن<v><tv><past>:خوارد   # ate
-هێنان<v><tv><past>:هێنان
+هێنان<v><tv><past>:هێنا     # brought
 
 LEXICON V-Stems_2    # Imperative Stems
 
