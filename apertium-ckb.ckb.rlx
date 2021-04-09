@@ -13,14 +13,13 @@ REMOVE (n) OR (v) IF (1 (n s)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
-# If there is a verb preceded by "they" it is a past p3 pl verb
-SELECT (v past p3 pl) IF (-1 (prn pers p3 pl) OR (n pl) OR (n def pl)) ;
-
 # If there is a verb preceded by "you" [plural] it is a past p2 pl verb
 SELECT (v past p2 pl) IF (-1 (prn pers p2 pl)) ;
 
 # If there is a noun + ی followed by a transitive verb, it is not a noun+Izafa
-REMOVE SUB:1 (izafa) IF (1 (v tv)) ;
+REMOVE SUB:1 (pr) IF (1 (v tv)) ;
+
+SELECT SUB:1 (pr) IF ((-1 (pr)) OR (1 (n)) OR (1 (adj))) ;
 
 # If there is a noun + یان followed by a transitive verb, it is not a plural noun
 REMOVE (n pl) IF (1 (v tv)) ;
