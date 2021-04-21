@@ -56,31 +56,44 @@
 PATTERNS
 Nouns
 Verbs
+Pronouns
 Adjectives
 Prepositions
 Conjunctions
+Determiners
 
 PATTERN Nouns
-N-Stems [ <n>: ] Definite/Plural?
+N-Stems [ <n>: ] Definite/Plural
+N-Stems [ <n>: ] Definite/Plural? [ +: ] Izafa
+Izafa
 
 PATTERN Verbs
-Verbs_Inf [ <v>: ]
-V-Stems_1 [ <v>: ] Subject_Prn(1)
-V-Stems_2 [ <v>: ] [ <imp><p2>:ب> ] Plural?
-V-Stems_2 [ <v>: ] [ <npast>:دە> ] Subject_Prn(1)
-V-Stems_1 [ <v>: ] [ ]
+Verbs_Inf
+V-Stems_1
+V-Stems_1 Subject_Prn(1)
+[ :نە> ] V-Stems_1 [ <neg>: ] Subject_Prn(1)
+NPast(1) V-Stems_2 NPast(2) Subject_Prn(2)
+N-Stems [<n>:] Definite/Plural? [+:] Subject_Prn(3)
+:Imperatives(1) V-Stems_2 Imperatives(2)
+
+PATTERN Pronouns
+Prns Subject_Prn(3)?
+Prns Izafa?
 
 PATTERN Adjectives
-Adjectives [ <adj>: ] Comparatives?
+Adj-Stem [ <adj>: ] Comparatives? Izafa?
 
 PATTERN Prepositions
-Prepositions [ <pr>: ]
+Prep [ <pr>: ]
 
 PATTERN Conjunctions
-Conjunctions [ <conjcoo>: ]
+Conj [ <conjcoo>: ]
 
 PATTERN Adverbs
-Adverbs [ <adv>: ]
+Adv [ <adv>: ]
+
+PATTERN Determiners
+Dets Izafa?
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
@@ -94,24 +107,69 @@ LEXICON N-Stems
 نامە:نامە       # letter
 دەرگا:دەرگا     # door
 لاپەڕە:لاپەڕە     # page
+نان:نان         # bread
+ئاو:ئاو           # water
+خودا:خودا       # god
+زەوی:زەوی       # earth
+فیلم:فیلم       # film
+ناو:ناو         # name
+ئاژەڵ:ئاژەڵ     # animal
+زمان:زمان       # language / tongue
+ژمارە:ژمارە     # amount / number
+وتار:وتار       # speech
+وشە:وشە         # word
+ساڵ:ساڵ         # year
+شار:شار         # city
+ئەنجومەن:ئەنجومەن        # committee
+سەر:سەر             # head
+بڕیارنامە:بڕیارنامە       # document
+دانیشتوو:دانیشتوو        # resident
+خەڵک:خەڵک            # people
 
 LEXICON Definite/Plural
 
-<def><sg>:>{B}  # ەکە / کە
-<ind><sg>:>{C}  # ێک / یەک
-<pl>:>{A}        # ان / ن
-<def><pl>:>{D}  # ەکان / کان
+<sg>:>
+<def><sg>:>{A}کە
+<ind><sg>:>{C}
+<pl>:>{Y}ان
+<def><pl>:>{A}کان
 
 LEXICON V-Stems_1    # Past, Intransitive Stems
 
-هات<v><iv><past>:هات # came
-چوو<v><iv><past>:چوو # went
+هاتن<v><iv><past>:هات       # came
+چوون<v><iv><past>:چوو       # went
+خواردن<v><tv><past>:خوارد   # ate
+هێنان<v><tv><past>:هێنا     # brought
+بوون<v><tv><past>:بوو        # was
+کردن<v><tv><past>:کرد        # did
+نووستن<v><iv><past>:نووست
+کوشتن<v><tv><past>:کوشت
+مردن<v><iv><past>:مرد
+بڕین<v><tv><past>:بڕی
 
 LEXICON V-Stems_2    # Imperative Stems
 
-خواردن<v><tv>:خۆ
-جوون<v><iv>:چ
+خواردن<v><tv>:خ{W}
+چوون<v><iv>:چ{O}
 هێنان<v><tv>:هێن
+ب<v><tv>:بوون
+کردن<v><tv>:کە
+نووستن<v><iv>:نوو
+کوشتن<v><tv>:کوژ
+مردن<v><iv>:مر
+بڕین<v><tv>:بڕ
+
+LEXICON NPast(2)
+
+:دە>  <npast>:
+:نا>  <npast><neg>:
+
+LEXICON Imperatives(2)
+
+:ب>   <imp><p2><sg>:
+:ب>   <imp><p2><pl>:ن
+:مە>   <imp><neg><p2><sg>:
+:مە>   <imp><neg><p2><pl>:ن
 
 LEXICON Verbs_Inf
 
@@ -119,46 +177,86 @@ LEXICON Verbs_Inf
 خواردن<v><tv><inf>:خواردن
 هاتن<v><iv><inf>:هاتن
 هێنان<v><tv><inf>:هێنان
+بوون<v><tv><inf>:بوون
+کردن<v><tv><inf>:کردن
+نووستن<v><iv><inf>:نووستن
+کوشتن<v><tv><inf>:کوشتن
+مردن<v><iv><inf>:مردن
+بڕین<v><tv><inf>:بڕین
 
-LEXICON Plural
+LEXICON Subject_Prn(3)  # Subject Pronouns
 
-<pl>:>ن
+<p1><sg>:>م   <p1><sg>:>م     من<prn><pers><p1><sg>:>م
+<p1><pl>:>ین  <p1><pl>:>ین  ئێمە<prn><pers><p1><pl>:>مان
+<p2><sg>:>یت  <p2><sg>:>یت  تۆ<prn><pers><p2><sg>:>ت
+<p2><pl>:>ن   <p2><pl>:>ن   ئێوە<prn><pers><p2><pl>:>تان
+<p3><sg>:>    <p3><sg>:>{I}ت    ئەو<prn><pers><p3><sg>:>ی
+<p3><pl>:>ن   <p3><pl>:>ن   ئەوان<prn><pers><p3><pl>:>یان
 
-LEXICON Subject_Prn(1)  # Subject Pronouns for Intrans. Verbs
+LEXICON Adj-Stem
 
-+<prn><pers><p1><sg><subj>:>م
-+<prn><pers><p1><pl><subj>:>ین
-+<prn><pers><p2><sg><subj>:>یت
-+<prn><pers><p2><pl><subj>:>ن
-+<prn><pers><p3><sg><subj>:
-+<prn><pers><p3><pl><subj>:>ن
-
-LEXICON Adjectives
-
-گەورە<adj>:گەورە   # large
-گەرم<adj>:گەرم     # warm
-چاک<adj>:چاک       # good
+گەورە:گەورە   # large
+گەرم:گەرم     # warm
+چاک:چاک       # good
+بچووک:بچووک   # small
+خۆش:خۆش       # great
 
 LEXICON Comparatives
 
-تر<adj><comp>:>تر
-ترین<adj><sup>:>ترین
+<comp>:>تر
+<sup>:>ترین
 
-LEXICON Prepositions
+LEXICON Prep
 
-بە<pr>:بە
-بۆ<pr>:بۆ
-لە<pr>:لە
+بە:بە
+بۆ:بۆ
+لە:لە
+کە:کە
+بێ:بێ
+لەسەر:لەسەر
+لەگەڵ:لەگەڵ
+تا:تا
 
-LEXICON Conjunctions
+LEXICON Conj
 
-و<conjcoo>:و
-یان<conjcoo>:یان
-بەڵام<conjcoo>:بەڵام
+و:و
+وە:وە
+یان:یان
+یا:یا
+بەڵام:بەڵام
+جا:جا
+لەبەر:لەبەر
+هەروەها:هەروەها
 
-LEXICON Adverbs
+LEXICON Adv
 
-سبەینێ<adv>:سبەینێ
+سبەینێ:سبەینێ
+هەندێکجار:هەندێکجار
+هەر:هەر
+خۆش:خۆش
+
+LEXICON Prns
+
+من<prn><pers><p1><sg>:من
+تۆ<prn><pers><p2><sg>:تۆ
+ئەو<prn><pers><p3><sg>:ئەو
+ئێمە<prn><pers><p1><pl>:ئێمە
+ئێوە<prn><pers><p2><pl>:ئێوە
+ئەوان<prn><pers><p3><pl>:ئەوان
+کێ<prn><pers><itg>:کێ
+کەس<prn><pers><ind>:کەس
+
+LEXICON Izafa
+
+ی<pr>:>ی
+ە<pr>:>ە
+
+LEXICON Dets
+
+ئەمە<det><prx><sg>:ئەمە
+ئەوە<det><dst><pl>:ئەوە
+ئەمانە<det><prx><pl>:ئەمانە
+ئەوانە<det><dst><pl>:ئەوانە
 
 # Resources:
 # https://github.com/apertium/lexd/blob/master/Usage.md

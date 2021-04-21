@@ -40,7 +40,7 @@
       <program name="lt-proc -w">
         <file name="ckb.automorf.bin"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc -1 -n -w">
         <file name="ckb.rlx.bin"/>
       </program>
     </pipeline>
@@ -51,7 +51,7 @@
       <program name="lt-proc -w">
         <file name="ckb.automorf.bin"/>
       </program>
-      <program name="cg-conv -a"/>
+      <program name="cg-conv -a -l"/>
       <program name="vislcg3 --trace --grammar">
         <file name="ckb.rlx.bin"/>
       </program>
@@ -59,4 +59,3 @@
   </mode>
 
 </modes>
-
