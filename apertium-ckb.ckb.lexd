@@ -63,8 +63,8 @@ Conjunctions
 Determiners
 
 PATTERN Nouns
-N-Stems [ <n>: ] Definite/Plural?
-N-Stems [ <n>+: ] Izafa
+N-Stems [ <n>: ] Definite/Plural
+N-Stems [ <n>: ] Definite/Plural? [ +: ] Izafa
 Izafa
 
 PATTERN Verbs
@@ -120,14 +120,15 @@ LEXICON N-Stems
 وشە:وشە         # word
 ساڵ:ساڵ         # year
 شار:شار         # city
-ئەنجومەن        # committee
-سەر             # head
-بڕیارنامە       # document
-دانیشتوو        # resident
-خەڵک            # people
+ئەنجومەن:ئەنجومەن        # committee
+سەر:سەر             # head
+بڕیارنامە:بڕیارنامە       # document
+دانیشتوو:دانیشتوو        # resident
+خەڵک:خەڵک            # people
 
 LEXICON Definite/Plural
 
+<sg>:>
 <def><sg>:>{A}کە
 <ind><sg>:>{C}
 <pl>:>{Y}ان
@@ -139,8 +140,12 @@ LEXICON V-Stems_1    # Past, Intransitive Stems
 چوون<v><iv><past>:چوو       # went
 خواردن<v><tv><past>:خوارد   # ate
 هێنان<v><tv><past>:هێنا     # brought
-بوو<v><tv><past>:بوو        # was
-کرد<v><tv><past>:کرد        # did
+بوون<v><tv><past>:بوو        # was
+کردن<v><tv><past>:کرد        # did
+نووستن<v><iv><past>:نووست
+کوشتن<v><tv><past>:کوشت
+مردن<v><iv><past>:مرد
+بڕین<v><tv><past>:بڕی
 
 LEXICON V-Stems_2    # Imperative Stems
 
@@ -148,6 +153,11 @@ LEXICON V-Stems_2    # Imperative Stems
 چوون<v><iv>:چ{O}
 هێنان<v><tv>:هێن
 ب<v><tv>:بوون
+کردن<v><tv>:کە
+نووستن<v><iv>:نوو
+کوشتن<v><tv>:کوژ
+مردن<v><iv>:مر
+بڕین<v><tv>:بڕ
 
 LEXICON NPast(2)
 
@@ -169,6 +179,10 @@ LEXICON Verbs_Inf
 هێنان<v><tv><inf>:هێنان
 بوون<v><tv><inf>:بوون
 کردن<v><tv><inf>:کردن
+نووستن<v><iv><inf>:نووستن
+کوشتن<v><tv><inf>:کوشتن
+مردن<v><iv><inf>:مردن
+بڕین<v><tv><inf>:بڕین
 
 LEXICON Subject_Prn(3)  # Subject Pronouns
 
@@ -184,7 +198,8 @@ LEXICON Adj-Stem
 گەورە:گەورە   # large
 گەرم:گەرم     # warm
 چاک:چاک       # good
-زۆر:زۆر       # many
+بچووک:بچووک   # small
+خۆش:خۆش       # great
 
 LEXICON Comparatives
 
@@ -218,6 +233,7 @@ LEXICON Adv
 سبەینێ:سبەینێ
 هەندێکجار:هەندێکجار
 هەر:هەر
+خۆش:خۆش
 
 LEXICON Prns
 
