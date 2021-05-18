@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>kk</locale>
+    <locale>ckb</locale>
     <title>Apertium morphological analyser-based speller (Central Kurdish)</title>
     <description>
       A spellchecker for Central Kurdish.
