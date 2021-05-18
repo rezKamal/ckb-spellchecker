@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python
 
 # see editdist.py --help for usage
