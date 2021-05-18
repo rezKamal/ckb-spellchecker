@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Config:
   hfst:
     App: hfst-lookup
@@ -19,3 +20,26 @@ Tests:
         - هەموو # all
     ئەمە<unk>:
         - ئەمە  # this
+=======
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../ckb.autogen.hfst
+    Morph: ../ckb.automorf.hfst
+
+Tests:
+
+  Unknown Words:
+    خودا<n>:
+        - خودا  # God
+    بوو<unk>:
+        - بوو    # was
+    کە<pr>:      # preposition
+        - کە
+    جا<conjcoo>:  # so
+        - جا
+    هەموو<unk>:
+        - هەموو # all
+    ئەمە<unk>:
+        - ئەمە  # this
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9

@@ -106,7 +106,7 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 	rm -f $@
 	zip -j $@ .deps/acceptor.default.hfst .deps/errmodel.default.hfst speller/index.xml
 
-.deps/errmodel.default.hfst: .deps/words.default.hfst .deps/strings.default.hfst
+.deps/errmodel.default.hfst: .deps/words.default.hfst .deps/strings.default.hfst .deps/acceptor.default.hfst
 	python dev/editdist.py -v -s -d 1 -e '@0@' -i speller/editdist.default.txt -a .deps/acceptor.default.hfst \
 	| hfst-txt2fst  -e '@0@' -o .deps/editdist.default.hfst
 	hfst-disjunct .deps/strings.default.hfst .deps/editdist.default.hfst \
@@ -159,9 +159,9 @@ apertium_ckb_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 EXTRA_TARGETS=
 
-if HAVE_HFSTOSPELL
+#if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
-endif # HAVE_HFSTOSPELL
+#endif # HAVE_HFSTOSPELL
 
 apertium_ckb_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
 

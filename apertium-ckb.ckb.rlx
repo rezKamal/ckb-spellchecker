@@ -14,15 +14,22 @@ REMOVE (n) OR (v) IF (1 (n s)) ;
 SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
 # If there is a verb preceded by "you" [plural] it is a past p2 pl verb
-SELECT (v past p2 pl) IF (-1 (prn pers p2 pl)) ;
+SELECT (v iv past p2 pl) IF (-1 (prn pers p2 pl)) ;
+
+# If there is a verb preceded by "they" it is a past p3 pl verb
+SELECT (v iv past p3 pl) IF (-1 (prn pers p3 pl)) ;
 
 # If there is a noun + ی followed by a transitive verb, it is not a noun+Izafa
 REMOVE SUB:1 (pr) IF (1 (v tv)) ;
 
-SELECT SUB:1 (pr) IF ((-1 (pr)) OR (1 (n)) OR (1 (adj))) ;
+# If there is a noun + ی followed by a noun, adj, or prn, it is a noun+Izafa
+SELECT SUB:1 (pr) IF ((1 (n)) OR (1 (adj)) OR (1 (prn))) ;
 
 # If there is a noun + یان followed by a transitive verb, it is not a plural noun
 REMOVE (n pl) IF (1 (v tv)) ;
+
+# If there is a noun + یان followed by a p3-pl intransitive verb, it is a plural noun
+SELECT (n pl) IF (1 (v iv)) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html

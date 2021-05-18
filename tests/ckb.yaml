@@ -14,7 +14,11 @@ Tests:
   Adverbs:
     سبەینێ<adv>:
     - سبەینێ
+<<<<<<< HEAD
     هەندێک جار<adv>:
+=======
+    هەندێکجار<adv>:
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     - هەندێکجار
   Attribution:
     سەر<n>+ی<pr>+مارێک<n><ind><sg>:
@@ -41,16 +45,28 @@ Tests:
     یان<conjcoo>:
     - یان
   Definite:
+<<<<<<< HEAD
     سه‌گ<n><def><sg>:
     - سه‌گه‌كه‌
     لاپه‌ڕه‌<n><def><sg>:
+=======
+    سەگ<n><def><sg>:
+    - سەگەکە
+    لاپەڕە<n><def><sg>:
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     - لاپەڕەکە
     نامە<n><def><sg>:
     - نامەکە
     پیاو<n><def><sg>:
+<<<<<<< HEAD
     - پیاوه‌كه‌
   Definite Plurals:
     سه‌گ<n><def><pl>:
+=======
+    - پیاوەکە
+  Definite Plurals:
+    سەگ<n><def><pl>:
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     - سەگەکان
     لاپەڕە<n><def><pl>:
     - لاپەڕەکان
@@ -70,6 +86,7 @@ Tests:
     - ئەو سەگە
   Imperative: {}
   Imperative Verbs:
+<<<<<<< HEAD
     خواردن<v><tv><imp><neg<p3><sg>:
     - مەیخۆ
     هاتن<v><iv><imp><neg><p3>:
@@ -83,17 +100,41 @@ Tests:
     - سه‌گێک
     لاپه‌ڕه‌<n><ind><sg>:
     - لاپه‌ڕه‌یه‌ك
+=======
+    خواردن<v><tv><imp><neg><p2><sg>:
+    - مەخۆ
+    هاتن<v><iv><imp><neg><p2><sg>:
+    - مەیە
+    هێنان<v><tv><imp><neg><p2><sg>:
+    - مەهێنە
+    چوون<v><iv><imp><neg><p2><sg>:
+    - مەچۆ
+  Indefinite:
+    سەگ<n><ind><sg>:
+    - سەگێک
+    لاپەڕە<n><ind><sg>:
+    - لاپەڕەیەک
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     نامە<n><ind><sg>:
     - نامەیەک
     پیاو<n><ind><sg>:
     - پیاوێک
   Lemma Plurals:
+<<<<<<< HEAD
     سه‌گ<n><pl>:
     - سەگان
     لاپه‌ڕه‌<n><pl>:
     - لاپەڕان
     نامە<n><pl>:
     - نامان
+=======
+    سەگ<n><pl>:
+    - سەگان
+    لاپەڕە<n><pl>:
+    - لاپەڕەیان
+    نامە<n><pl>:
+    - نامەیان
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     پیاو<n><pl>:
     - پیاوان
   Negatives: {}
@@ -102,12 +143,22 @@ Tests:
     - دەرگا
     رۆژ<n>:
     - رۆژ
+<<<<<<< HEAD
     سه‌گ<n>:
     - سه‌گ
+=======
+    سەگ<n>:
+    - سەگ
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     نامە<n>:
     - نامە
     پیاو<n>:
     - پیاو
+<<<<<<< HEAD
+=======
+    ئاو<n>:
+    - ئاو
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
   Parts of Speech: {}
   Past Verbs:
     خواردن<v><tv><past><neg><p3><sg>:
@@ -176,7 +227,11 @@ Tests:
     - گەرمترین
     گەورە<adj><sup>:
     - گەورەترین
+<<<<<<< HEAD
   To Bring:
+=======
+  Food:
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
     نان<n>+ئێمە<prn><pers><p1><pl>:
     - نانمان
     نان<n>+ئێوە<prn><pers><p2><pl>:
@@ -189,6 +244,22 @@ Tests:
     - نانت
     نان<n>+من<prn><pers><p1><sg>:
     - نانم
+<<<<<<< HEAD
+=======
+  Water:
+    ئاو<n>+ئێمە<prn><pers><p1><pl>:
+    - ئاومان
+    ئاو<n>+ئێوە<prn><pers><p2><pl>:
+    - ئاوتان
+    ئاو<n>+ئەو<prn><pers><p3><sg>:
+    - ئاوی
+    ئاو<n>+ئەوان<prn><pers><p3><pl>:
+    - ئاویان
+    ئاو<n>+تۆ<prn><pers><p2><sg>:
+    - ئاوت
+    ئاو<n>+من<prn><pers><p1><sg>:
+    - ئاوم
+>>>>>>> 4cf40ad760e17db14736ddeaeea32c38202627f9
   To Come:
     هاتن<v><iv><past><p1><pl>:
     - هاتین

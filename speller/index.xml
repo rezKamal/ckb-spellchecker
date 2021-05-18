@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>kk</locale>
+    <locale>ckb</locale>
     <title>Apertium morphological analyser-based speller (Central Kurdish)</title>
     <description>
       A spellchecker for Central Kurdish.
@@ -9,8 +9,8 @@
     <version vcsrev="GT_REVISION">GT_VERSION</version>
     <date>DATE</date>
     <producer>Apertium contributors</producer>
-    <contact email="feedback@divvun.no"
-        website="http://divvun.no"/>
+    <contact email="rkamal1@swarthmore.edu"
+        website="github.com/rezKamal"/>
   </info>
   <acceptor type="general" id="acceptor.default.hfst">
     <title>Apertium dictionary (Central Kurdish)</title>
