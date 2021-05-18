@@ -1,8 +1,4 @@
 <<<<<<< HEAD
 # Add complete words here as misspelling:correct followed by a TAB and the
 # weight:
-=======
-# Add complete words here as misspelling:correct followed by a TAB and the
-# weight:
 #jih:jïh	0.0
->>>>>>> 4e73b5eafb758d66752c65bce53f591fa13163f7
