@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Alphabet
   ا ب ج د ە ف گ ه ح ژ ک ل م ن ۆ پ ق ر س ت ئ ڤ و خ ی ز چ غ ‌ع ڵ ڕ ش و وو ك ء ة ي
   %{A%}:ە %{A%}:0
@@ -46,52 +45,3 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 ! https://github.com/hfst/
 ! http://wiki.apertium.org/wiki/Twol
 ! http://wiki.apertium.org/wiki/Hfst
-=======
-Alphabet
-  ا ب ج د ە ف گ ه ح ژ ک ل م ن ۆ پ ق ر س ت ئ ڤ و خ ی ز چ غ ‌ع ڵ ڕ ش و وو
-  %{A%}:ە %{A%}:0
-  %{a%}:ە %{a%}:0
-  %{C%}:ێک %{C%}:یەک
-  %{O%}:0 %{O%}:ۆ
-  %{W%}:و %{W%}:ۆ
-  %{Y%}:0 %{Y%}:ی
-  %{I%}:ا %{I%}:ێ
-  %{W%}:و %{W%}:ۆ
-  %{y%}:ی %{y%}:0
-  %{e%}:ی %{e%}:ێ
-  %{i%}:ە %{i%}:0
-  %{w%}:و %{w%}:وو
-  %{k%}:ک
-  %>:0;
-
-Sets
-
-Vowel = ا ە ۆ و ی و وو;
-
-Rules
-
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
-
-"Remove ە from ەکە and ەکان after one of the two vowels ە and ا"
-%{A%}:0 <=> :ە %>:0 _ ;
-            :ا %>:0 _ ;
-
-"Change indefinite singular noun ending from ێک to یەک for noun ending with ایێۆ"
-%{C%}:یە <=> ە %>:0 _ ;
-          ا %>:0 _ ;
-          ی %>:0 _ ;
-          ێ %>:0 _ ;
-          ۆ %>:0 _ ;
-
-"Add ی before ان pluralization for noun ending with ە or ا"
-%{Y%}:ی <=> :ە %>:0 _ ;
-            :ا %>:0 _ ;
-
-! Resources:
-! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
-! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
-! https://github.com/hfst/
-! http://wiki.apertium.org/wiki/Twol
-! http://wiki.apertium.org/wiki/Hfst
->>>>>>> 4e73b5eafb758d66752c65bce53f591fa13163f7
