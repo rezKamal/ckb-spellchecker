@@ -1,3 +1,8 @@
+===============================================================================
+
+Author's note: This project belongs to Rezhwan Kamal. It is licensed under the
+MIT License. A relevant Wikipedia entry can be found [https://wikis.swarthmore.edu/ling073/User:Rkamal1/Final_project](here).
+
 Sorani Kurdish: `apertium-ckb`
 ===============================================================================
 
@@ -7,6 +12,7 @@ you can use this language package for:
 * Morphological analysis of Sorani Kurdish
 * Morphological generation of Sorani Kurdish
 * Part-of-speech tagging of Sorani Kurdish
+* Spell-checking text in Sorani Kurdish
 
 Requirements
 -------------------------------------------------------------------------------
